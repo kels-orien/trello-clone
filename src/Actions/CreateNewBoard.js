@@ -1,4 +1,3 @@
-import React from "react";
 import { CREATE_NEW_BOARD } from "./ActionTypes";
 
 export default function CreateNewBoard() {

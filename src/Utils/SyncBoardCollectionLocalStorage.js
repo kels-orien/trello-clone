@@ -1,5 +1,3 @@
-import find from "lodash/find";
-
 export const loadState = () => {
   try {
     const serializedBoardCollectionState = localStorage.getItem(
