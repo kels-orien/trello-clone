@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import styled from "styled-components";
 import { connect } from "react-redux";
 import cancelCreatingBoard from "./../../../Actions/CancelCreatingBoard";
 import submitNewBoard from "./../../../Actions/CancelCreatingBoard";
 import BoardTitleForm from "./BoardTitleForm";
+import Modals from "./Modal";
 
 class CreateCurrentBoard extends Component {
   submit = values => {
@@ -13,12 +13,12 @@ class CreateCurrentBoard extends Component {
   render() {
     const { cancelCreatingBoard } = this.props;
     return (
-      <div>
+      <Modals>
         <BoardTitleForm
           onSubmit={this.submit}
           cancelAction={cancelCreatingBoard}
         />
-      </div>
+      </Modals>
     );
   }
 }
