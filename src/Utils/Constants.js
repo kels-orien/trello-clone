@@ -1,0 +1,1 @@
+export const UNTITLED_BOARD_TITLE = "Untitled board"
